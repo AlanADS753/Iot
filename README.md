@@ -39,10 +39,11 @@ machine/
 │
 └── README.md
 
+---
 Configuração e Instalação
 1. Clonar o repositório
 Bash
-git clone <url-do-seu-repositorio>
+git clone <https://github.com/AlanADS753/Iot>
 cd machine
 2. Instalar dependências
 Bash
@@ -74,8 +75,11 @@ Converte os campos de data/hora para o formato correto.
 
 Insere os dados na tabela temperature_readings.
 
-Views SQL e Seus Objetivos
+---
+
+## Views SQL e Seus Objetivos
 1. Média de Temperatura por Dispositivo
+
 SQL
 CREATE VIEW avg_temp_por_dispositivo AS
 SELECT device_id, AVG(temperature) AS avg_temp
@@ -110,6 +114,9 @@ Bash
 cd machine_prediction
 streamlit run streamlit_app.py
 Insights e Análise
+
+---
+
 A partir deste dashboard, é possível:
 
 Identificar dispositivos que operam fora da temperatura média ideal.
@@ -119,6 +126,8 @@ Detectar horários de pico na coleta de dados dos sensores.
 Observar tendências térmicas para manutenção preditiva.
 
 Visualizar anomalias ou falhas de leitura em períodos específicos.
+
+---
 
 Conclusão
 Este projeto demonstra a implementação prática de um pipeline de análise de dados aplicado a cenários de IoT, focando em escalabilidade (usando SQL) e visualização de dados eficiente.
